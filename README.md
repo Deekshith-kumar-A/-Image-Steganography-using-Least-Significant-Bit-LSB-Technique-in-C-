@@ -63,7 +63,7 @@ In this project:
 ---
 
 ## 🖥️ Usage
-
+```bash
 🔸 Encode Data
 
 ./a.out -e <input_image.bmp> <secret.txt> <output_image.bmp>
@@ -87,7 +87,7 @@ Secret file extension decoded successfully.
 Secret file size decoded successfully.
 Secret file decoded and written to output file successfully.
 Decoding completed successfully.
-
+```
 👨‍💻 Author
 
 Deekshith Kumar A
