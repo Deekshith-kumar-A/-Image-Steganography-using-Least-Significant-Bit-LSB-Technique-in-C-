@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
     // Step 4: Perform decoding
     else if (oprn_type == e_decode)
     {
-        if (argc < 4)
+        if (argc < 3)
         {
             printf("Missing arguments for decoding\n");
             printf("Give agruments like this --> ./a.out -d  stego_image.bmp   output_file\n");
