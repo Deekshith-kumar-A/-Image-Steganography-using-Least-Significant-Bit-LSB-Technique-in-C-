@@ -1,24 +1,79 @@
-Steganography Project in C
+# 🕵️‍♂️ Steganography Project in C
 
-A C-based Steganography System that securely hides secret data (like text files) inside image files (.bmp) without altering the visible image.
-The project supports both Encoding (hiding data) and Decoding (extracting hidden data) operations using Least Significant Bit (LSB) manipulation.
+A **C-based Steganography System** that hides secret data inside BMP image files using **Least Significant Bit (LSB)** encoding.  
+This project demonstrates secure data hiding and retrieval using **bitwise operations**, **file handling**, and **data structures** in C.
 
-Project Overview
+---
 
-This project demonstrates the concept of Steganography, where information is concealed within digital media.
-In this implementation:
+## 🧩 Overview
 
-A secret text file is encoded into a BMP image.
+Steganography is the practice of concealing information within other digital media.  
+In this project:
+- A **secret text file** is encoded into a **BMP image** without visible distortion.
+- The same image can later be **decoded** to retrieve the hidden data.
 
-The same image can later be decoded to retrieve the hidden message.
+---
 
-It uses bitwise operations, file handling, and data manipulation techniques to perform the process efficiently.
+## ⚙️ Features
 
-⚙️ Features
+- 🔐 Encode any text file into a `.bmp` image  
+- 🔎 Decode and extract hidden messages accurately  
+- 📁 Validate all file formats and handle errors gracefully  
+- 🧠 Efficient LSB-based bitwise embedding  
+- 🧩 Modular design with separate encoding/decoding logic  
+- 💾 Safe handling of BMP headers and pixel data  
 
-1. Encode a secret text file into a BMP image
-2. Decode the hidden message from an encoded image
-3. Validate input arguments and file formats
-4. Handles BMP headers carefully without distortion
-5. Error handling for missing or invalid files
-6. Modular design with separate encode/decode modules
+---
+
+## 📁 Project Structure
+
+📦 Steganography
+┣ 📜 main.c
+┣ 📜 encode.c
+┣ 📜 decode.c
+┣ 📜 encode.h
+┣ 📜 decode.h
+┣ 📜 types.h
+┣ 📜 common.h
+┣ 🖼️ beautiful.bmp # Input cover image
+┣ 📄 secret.txt # Secret data file
+┗ 🖼️ image.bmp # Encoded output image
+
+
+---
+
+## 🧠 How It Works
+
+### 🔹 Encoding
+1. Read source BMP and secret text file  
+2. Copy BMP header to a new image  
+3. Embed:
+   - Magic string (to identify encoded images)  
+   - Secret file extension and size  
+   - Secret data bits into pixel LSBs  
+4. Generate encoded output image  
+
+### 🔹 Decoding
+1. Read the encoded BMP  
+2. Verify the magic string  
+3. Extract:
+   - File extension, size, and data bits  
+4. Reconstruct the hidden file  
+
+---
+
+## 🖥️ Usage
+
+### 🔸 Encode Data
+```bash
+./a.out -e <input_image.bmp> <secret.txt> <output_image.bmp>
+🧪 Sample Output
+All files opened successfully.
+Width = 1024
+Height = 768
+Image has enough capacity to hold secret data.
+BMP Header copied successfully.
+Magic string encoded successfully.
+Secret file extension encoded successfully.
+Secret file encoded successfully.
+Encoding completed successfully.
