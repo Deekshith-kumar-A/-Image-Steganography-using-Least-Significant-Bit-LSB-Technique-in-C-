@@ -77,3 +77,20 @@ Magic string encoded successfully.
 Secret file extension encoded successfully.
 Secret file encoded successfully.
 Encoding completed successfully.
+
+### 🔸 Decode Data
+
+All files opened successfully.
+Magic string found. Image is encoded.
+Secret file extension size decoded successfully.
+Secret file extension decoded successfully.
+Secret file size decoded successfully.
+Secret file decoded and written to output file successfully.
+Decoding completed successfully.
+
+👨‍💻 Author
+
+Deekshith Kumar A
+🎓 Electronics and Communication Engineering
+💼 Passionate about Embedded Systems, Cybersecurity, and Software Development
+🔗 GitHub Profile
