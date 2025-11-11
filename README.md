@@ -89,8 +89,8 @@ Secret file decoded and written to output file successfully.
 Decoding completed successfully.
 ```
 👨‍💻 Author
-
+```
 Deekshith Kumar A
 🎓 Electronics and Communication Engineering
 💼 Passionate about Embedded Systems, Cybersecurity, and Software Development
-🔗 GitHub Profile
+🔗 https://github.com/Deekshith-kumar-A
