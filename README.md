@@ -64,8 +64,8 @@ In this project:
 
 ## 🖥️ Usage
 
-### 🔸 Encode Data
-```bash
+🔸 Encode Data
+
 ./a.out -e <input_image.bmp> <secret.txt> <output_image.bmp>
 🧪 Sample Output
 All files opened successfully.
@@ -78,7 +78,7 @@ Secret file extension encoded successfully.
 Secret file encoded successfully.
 Encoding completed successfully.
 
-### 🔸 Decode Data
+🔸 Decode Data
 
 All files opened successfully.
 Magic string found. Image is encoded.
