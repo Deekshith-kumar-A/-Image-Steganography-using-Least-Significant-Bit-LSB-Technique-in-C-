@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Steganography Project in C
+# 🕵️‍♂️ Image Steganography Using Least Significant Bit (LSB) Technique in C
 
 A **C-based Steganography System** that hides secret data inside BMP image files using **Least Significant Bit (LSB)** encoding.  
 This project demonstrates secure data hiding and retrieval using **bitwise operations**, **file handling**, and **data structures** in C.
